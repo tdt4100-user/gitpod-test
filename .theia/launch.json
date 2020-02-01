@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Account",
             "request": "launch",
+            "mainClass": "encapsulation.Account",
+            "projectName": "ovinger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Account",
+            "request": "launch",
             "mainClass": "Account",
             "projectName": "ovinger"
         },

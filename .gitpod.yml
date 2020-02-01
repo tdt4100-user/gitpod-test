@@ -1,7 +1,6 @@
 tasks:
-  - init: echo "Replace me with a build script for the project."
-    command: echo "Replace me with omething that should run on every start, or just
-      remove me entirely."
+  - init: sdk use 11.0.2-open
+    command: cd ovinger && mvn clean package
 image:
   file: .gitpod.Dockerfile
 
