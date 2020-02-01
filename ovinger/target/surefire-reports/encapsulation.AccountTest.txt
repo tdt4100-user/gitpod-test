@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: encapsulation.AccountTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! - in encapsulation.AccountTest
+testing  Time elapsed: 0.019 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: This test is true, what the fuck! ==> expected: <true> but was: <false>
+	at encapsulation.AccountTest.testing(AccountTest.java:12)
+

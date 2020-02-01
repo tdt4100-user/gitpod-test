@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Account",
+            "request": "launch",
+            "mainClass": "Account",
+            "projectName": "ovinger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Account",
+            "request": "launch",
+            "mainClass": "tdt4100.ovinger.app.encapsulation.Account",
+            "projectName": "ovinger"
+        }
+    ]
+}
