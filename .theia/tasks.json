@@ -10,9 +10,16 @@
             "group": "build"
         },
         {
-            "label": "test",
+            "label": "test Account",
             "type": "shell",
-            "command": "cd ovinger && mvn -PAccount test",
+            "command": "cd ovinger && mvn -Dtest=AccountTest test",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "test Location",
+            "type": "shell",
+            "command": "cd ovinger && mvn -Dtest=LocationTest test",
             "group": "test",
             "problemMatcher": []
         },

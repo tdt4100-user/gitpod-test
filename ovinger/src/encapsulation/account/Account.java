@@ -1,4 +1,4 @@
-package encapsulation;
+package encapsulation.account;
 
 class Account {
     private double balance;

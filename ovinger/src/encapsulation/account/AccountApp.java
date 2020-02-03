@@ -1,4 +1,4 @@
-package encapsulation;
+package encapsulation.account;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

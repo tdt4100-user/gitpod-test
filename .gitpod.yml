@@ -1,6 +1,6 @@
 tasks:
   - init: sdk use 11.0.2-open
-    command: cd ovinger && mvn clean package
+    command: cd ovinger && mvn clean -Dmaven.test.skip=true package
 image:
   file: .gitpod.Dockerfile
 

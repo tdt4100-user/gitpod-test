@@ -1,3 +1,5 @@
-encapsulation/AccountApp.class
-encapsulation/AccountController.class
-encapsulation/Account.class
+encapsulation/location/LocationInterface.class
+encapsulation/account/AccountApp.class
+encapsulation/account/Account.class
+encapsulation/account/AccountController.class
+encapsulation/location/Location.class

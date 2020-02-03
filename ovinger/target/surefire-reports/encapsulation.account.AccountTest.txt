@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: encapsulation.account.AccountTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.052 s <<< FAILURE! - in encapsulation.account.AccountTest
+account  Time elapsed: 0.025 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Creating Account with negative balance should throw an IllegalArgumentException.
+	at encapsulation.account.AccountTest.account(AccountTest.java:36)
+
+testSetInterestRate  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <7.0> but was: <5.0>
+	at encapsulation.account.AccountTest.testSetInterestRate(AccountTest.java:55)
+
+testWithdrawTooLargeAmount  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected IllegalArgumentException here
+	at encapsulation.account.AccountTest.testWithdrawTooLargeAmount(AccountTest.java:94)
+
+testWithdraw  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <50.0> but was: <100.0>
+	at encapsulation.account.AccountTest.testWithdraw(AccountTest.java:84)
+
+testDepositNegativeAmount  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: deposit should throw an IllegalArgumentException when given negative amounts.
+	at encapsulation.account.AccountTest.testDepositNegativeAmount(AccountTest.java:73)
+
+testDeposit  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200.0> but was: <100.0>
+	at encapsulation.account.AccountTest.testDeposit(AccountTest.java:67)
+

@@ -1,3 +1,5 @@
-/workspace/gitpod-test/ovinger/src/encapsulation/AccountController.java
-/workspace/gitpod-test/ovinger/src/encapsulation/AccountApp.java
-/workspace/gitpod-test/ovinger/src/encapsulation/Account.java
+/workspace/gitpod-test/ovinger/src/encapsulation/account/AccountApp.java
+/workspace/gitpod-test/ovinger/src/encapsulation/location/Location.java
+/workspace/gitpod-test/ovinger/src/encapsulation/account/AccountController.java
+/workspace/gitpod-test/ovinger/src/encapsulation/account/Account.java
+/workspace/gitpod-test/ovinger/src/encapsulation/location/LocationInterface.java

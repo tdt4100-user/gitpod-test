@@ -1,4 +1,4 @@
-package encapsulation;
+package encapsulation.account;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
