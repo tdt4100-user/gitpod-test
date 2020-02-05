@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="stateandbehavior.RectangleTest" time="0.064" tests="8" errors="0" skipped="0" failures="8">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspace/gitpod-test/ovinger/target/test-classes:/workspace/gitpod-test/ovinger/target/classes:/workspace/m2-repository/org/openjfx/javafx-fxml/13.0.1/javafx-fxml-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-fxml/13.0.1/javafx-fxml-13.0.1-linux.jar:/workspace/m2-repository/org/openjfx/javafx-controls/13.0.1/javafx-controls-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-controls/13.0.1/javafx-controls-13.0.1-linux.jar:/workspace/m2-repository/org/openjfx/javafx-graphics/13.0.1/javafx-graphics-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-graphics/13.0.1/javafx-graphics-13.0.1-linux.jar:/workspace/m2-repository/org/openjfx/javafx-base/13.0.1/javafx-base-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-base/13.0.1/javafx-base-13.0.1-linux.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/11.0.2-zulufx/lib"/>
+    <property name="sun.java.command" value="/workspace/gitpod-test/ovinger/target/surefire/surefirebooter13157685966237406769.jar /workspace/gitpod-test/ovinger/target/surefire 2020-02-05T09-56-10_998-jvmRun1 surefire5678013482044649551tmp surefire_08335660512281405298tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="RectangleTest"/>
+    <property name="surefire.test.class.path" value="/workspace/gitpod-test/ovinger/target/test-classes:/workspace/gitpod-test/ovinger/target/classes:/workspace/m2-repository/org/openjfx/javafx-fxml/13.0.1/javafx-fxml-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-fxml/13.0.1/javafx-fxml-13.0.1-linux.jar:/workspace/m2-repository/org/openjfx/javafx-controls/13.0.1/javafx-controls-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-controls/13.0.1/javafx-controls-13.0.1-linux.jar:/workspace/m2-repository/org/openjfx/javafx-graphics/13.0.1/javafx-graphics-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-graphics/13.0.1/javafx-graphics-13.0.1-linux.jar:/workspace/m2-repository/org/openjfx/javafx-base/13.0.1/javafx-base-13.0.1.jar:/workspace/m2-repository/org/openjfx/javafx-base/13.0.1/javafx-base-13.0.1-linux.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/gitpod"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/11.0.2-zulufx"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspace/gitpod-test/ovinger"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/workspace/gitpod-test/ovinger/target/surefire/surefirebooter13157685966237406769.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.2+7-LTS"/>
+    <property name="user.name" value="gitpod"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.14.138+"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu11.29+3-CA"/>
+    <property name="localRepository" value="/workspace/m2-repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="user.dir" value="/workspace/gitpod-test/ovinger"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.2+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testAddXY" classname="stateandbehavior.RectangleTest" time="0.028">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.testAddXY(RectangleTest.java:64)
+]]></failure>
+  </testcase>
+  <testcase name="testUnion" classname="stateandbehavior.RectangleTest" time="0.001">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.testUnion(RectangleTest.java:153)
+]]></failure>
+  </testcase>
+  <testcase name="testAddRectangleToEmpty" classname="stateandbehavior.RectangleTest" time="0.003">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.testAddRectangleToEmpty(RectangleTest.java:92)
+]]></failure>
+  </testcase>
+  <testcase name="testAddXYToEmpty" classname="stateandbehavior.RectangleTest" time="0.007">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.testAddXYToEmpty(RectangleTest.java:54)
+]]></failure>
+  </testcase>
+  <testcase name="testAddSameXY" classname="stateandbehavior.RectangleTest" time="0.003">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.testAddSameXY(RectangleTest.java:80)
+]]></failure>
+  </testcase>
+  <testcase name="testAddSameRectangle" classname="stateandbehavior.RectangleTest" time="0.002">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.testAddSameRectangle(RectangleTest.java:132)
+]]></failure>
+  </testcase>
+  <testcase name="testRectangle" classname="stateandbehavior.RectangleTest" time="0.001">
+    <failure message="expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.assertEmpty(RectangleTest.java:31)
+	at stateandbehavior.RectangleTest.testRectangle(RectangleTest.java:37)
+]]></failure>
+  </testcase>
+  <testcase name="testAddRectangle" classname="stateandbehavior.RectangleTest" time="0.003">
+    <failure message="expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at stateandbehavior.RectangleTest.assertValues(RectangleTest.java:24)
+	at stateandbehavior.RectangleTest.testAddRectangle(RectangleTest.java:109)
+]]></failure>
+  </testcase>
+</testsuite>

@@ -24,6 +24,41 @@
             "problemMatcher": []
         },
         {
+            "label": "test Digit",
+            "type": "shell",
+            "command": "cd ovinger && mvn -Dtest=DigitTest test",
+            "group": "test",
+            "problemMatcher": []
+        },
+         {
+            "label": "test UpOrDownCounter",
+            "type": "shell",
+            "command": "cd ovinger && mvn -Dtest=UpOrDownCounterTest test",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "test Rectangle",
+            "type": "shell",
+            "command": "cd ovinger && mvn -Dtest=RectangleTest test",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "test LineEditor",
+            "type": "shell",
+            "command": "cd ovinger && mvn -Dtest=LineEditorTest test",
+            "group": "test",
+            "problemMatcher": []
+        },
+         {
+            "label": "test StopWatch",
+            "type": "shell",
+            "command": "cd ovinger && mvn -Dtest=StopWatchTest test",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
             "label": "run AccountApp",
             "type": "shell",
             "command": "cd tdt4100-assignment-with-javafx && mvn -PAccountApp exec:java",
