@@ -17,6 +17,12 @@
             "problemMatcher": []
         },
         {
+            "label": "Run Account",
+            "type": "shell",
+            "command": "cd ovinger && mvn exec:java -Dexec.mainClass='stateandbehavior.Account'",
+            "problemMatcher": []
+        },
+        {
             "label": "test Location",
             "type": "shell",
             "command": "cd ovinger && mvn -Dtest=LocationTest test",
