@@ -40,16 +40,16 @@ public class CardDeck {
 
     private List<Card> deck;
 
-    private List<Character> legalSuites = Arrays.asList('S', 'H', 'D', 'C');
-    private List<Integer> legalFaces = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+    private final List<Character> legalSuites = Arrays.asList('S', 'H', 'D', 'C');
+    private final List<Integer> legalFaces = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
 
-    public CardDeck(int n) {
+    public CardDeck(final int n) {
         this.deck = new ArrayList();
 
         for (int i = 0; i < this.legalSuites.size(); i++) {
             for (int j = 0; j < n; j++) {
-                char currentSuit = legalSuites.get(i);
-                int currentFace = legalFaces.get(j);
+                final char currentSuit = legalSuites.get(i);
+                final int currentFace = legalFaces.get(j);
                 deck.add(new Card(currentSuit, currentFace));
             }
         }
@@ -60,7 +60,7 @@ public class CardDeck {
         return this.deck.size();
     }
 
-    public Card getCard(int n) {
+    public Card getCard(final int n) {
         if (n < 0 || n > getCardCount()) {
             throw new IllegalArgumentException();
         }
@@ -68,11 +68,11 @@ public class CardDeck {
     }
 
     public void shufflePerfectly() {
-        int middleIndex = this.getCardCount() / 2;
+        final int middleIndex = this.getCardCount() / 2;
 
-        List<Card> firstHalf = this.deck.subList(0, middleIndex);
-        List<Card> secondHalf = this.deck.subList(middleIndex, middleIndex * 2);
-        List<Card> shuffledDeck = new ArrayList<>();
+        final List<Card> firstHalf = this.deck.subList(0, middleIndex);
+        final List<Card> secondHalf = this.deck.subList(middleIndex, middleIndex * 2);
+        final List<Card> shuffledDeck = new ArrayList<>();
 
         for (int i = 0; i < (firstHalf.size() + secondHalf.size()) / 2; i++) {
             shuffledDeck.add(firstHalf.get(i));
@@ -82,8 +82,8 @@ public class CardDeck {
         this.deck = shuffledDeck;
     }
 
-    public static void main(String[] args) {
-        CardDeck deck = new CardDeck(4);
+    public static void main(final String[] args) {
+        final CardDeck deck = new CardDeck(4);
         deck.shufflePerfectly();
     }
 }
