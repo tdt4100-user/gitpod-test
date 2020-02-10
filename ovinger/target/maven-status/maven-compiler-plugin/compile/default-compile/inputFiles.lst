@@ -1,10 +1,1 @@
-/workspace/gitpod-test/ovinger/src/stateandbehavior/StopWatch.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/apps/AccountApp.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/Location.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/Account.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/Digit.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/LineEditor.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/UpOrDownCounter.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/Rectangle.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/LocationInterface.java
-/workspace/gitpod-test/ovinger/src/stateandbehavior/apps/AccountController.java
+/workspace/gitpod-test/ovinger/src/encapsulation/Account.java
