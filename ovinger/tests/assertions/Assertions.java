@@ -2,12 +2,15 @@ package assertions;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class Assertions {
 
     /*
      * AssertEquals
+     * 
+     * @Jorgensta
      */
 
     public static void _assertEquals(String expected, String actual) {
@@ -22,12 +25,12 @@ public class Assertions {
         assertEquals(expected, actual);
     }
 
-    public static void _assertEquals(String msg, Integer expected, Integer actual) {
-        assertEquals(expected, actual, msg);
+    public static void _assertEquals(int expected, int actual) {
+        assertEquals(expected, actual);
     }
 
-    public static void _assertEquals(String msg, Double expected, Double actual, Double eps) {
-        assertEquals(expected, actual, eps, msg);
+    public static void _assertEquals(String msg, Integer expected, Integer actual) {
+        assertEquals(expected, actual, msg);
     }
 
     public static void _assertEquals(Double expected, Double actual) {
@@ -42,24 +45,34 @@ public class Assertions {
         assertEquals(expected, actual, eps);
     }
 
+    public static void _assertEquals(String msg, Double expected, Double actual, Double eps) {
+        assertEquals(expected, actual, eps, msg);
+    }
+
     public static void _assertEquals(String msg, Byte expected, Byte actual) {
         assertEquals(expected, actual, msg);
+    }
+
+    public static void _assertEquals(boolean expected, boolean actual) {
+        assertEquals(expected, actual);
+    }
+
+    public static void _assertEquals(String msg, boolean expected, boolean actual) {
+        assertEquals(expected, actual, msg);
+    }
+
+    public static void _assertEquals(Object expected, Object actual) {
+        assertEquals(expected, actual);
     }
 
     public static void _assertEquals(String msg, Object expected, Object actual) {
         assertEquals(expected, actual, msg);
     }
 
-    public static void _assertEquals(boolean expected, Boolean actual) {
-        assertEquals(expected, actual);
-    }
-
-    public static void _assertEquals(String msg, boolean expected, Boolean actual) {
-        assertEquals(expected, actual, msg);
-    }
-
     /*
      * AssertTrue
+     * 
+     * @Jorgensta
      */
     public static void _assertTrue(boolean condition) {
         assertTrue(condition);
@@ -71,6 +84,8 @@ public class Assertions {
 
     /*
      * AssertNotNull
+     * 
+     * @Jorgensta
      */
 
     public static void _assertNotNull(Object notNullObject) {
@@ -79,5 +94,13 @@ public class Assertions {
 
     public static void _assertNotNull(String msg, Object notNullObject) {
         assertNotNull(notNullObject, msg);
+    }
+
+    /*
+     * AssertFalse
+     */
+
+    public static void _assertFalse(boolean condition) {
+        assertFalse(condition);
     }
 }
