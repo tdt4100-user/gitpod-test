@@ -45,6 +45,7 @@ public class CardDeck {
 
     public CardDeck(int n) {
         this.deck = new ArrayList();
+
         for (int i = 0; i < this.legalSuites.size(); i++) {
             for (int j = 0; j < n; j++) {
                 char currentSuit = legalSuites.get(i);
@@ -55,18 +56,34 @@ public class CardDeck {
 
     }
 
-    public int getCardCount(){
+    public int getCardCount() {
         return this.deck.size();
     }
 
-    public Card getCard(int n){
-        if(n < 0 || n > getCardCount()){
+    public Card getCard(int n) {
+        if (n < 0 || n > getCardCount()) {
             throw new IllegalArgumentException();
         }
         return this.deck.get(n);
     }
 
-    public void shufflePerfectly(){
+    public void shufflePerfectly() {
+        int middleIndex = this.getCardCount() / 2;
 
+        List<Card> firstHalf = this.deck.subList(0, middleIndex);
+        List<Card> secondHalf = this.deck.subList(middleIndex, middleIndex * 2);
+        List<Card> shuffledDeck = new ArrayList<>();
+
+        for (int i = 0; i < (firstHalf.size() + secondHalf.size()) / 2; i++) {
+            shuffledDeck.add(firstHalf.get(i));
+            shuffledDeck.add(secondHalf.get(i));
+        }
+
+        this.deck = shuffledDeck;
+    }
+
+    public static void main(String[] args) {
+        CardDeck deck = new CardDeck(4);
+        deck.shufflePerfectly();
     }
 }

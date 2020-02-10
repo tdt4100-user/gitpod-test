@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CardDeck",
+            "request": "launch",
+            "mainClass": "encapsulation.CardDeck",
+            "projectName": "ovinger"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AccountApp",
             "request": "launch",
             "mainClass": "encapsulation.account.AccountApp",
