@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Application",
+            "request": "launch",
+            "mainClass": "tdt4100.app.Application"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CardDeck",
             "request": "launch",
             "mainClass": "encapsulation.CardDeck",
