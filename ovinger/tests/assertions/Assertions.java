@@ -8,6 +8,18 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class Assertions {
 
     /*
+    Return assertEquals;
+    */
+
+    public static boolean _assertEqualsReturn(int expected, int actual){
+        return expected == actual;
+    }
+
+     public static boolean _assertEqualsReturn(String expected, String actual){
+        return expected.equals(actual);
+    }
+
+    /*
      * AssertEquals
      * 
      * @Jorgensta
@@ -102,5 +114,9 @@ public class Assertions {
 
     public static void _assertFalse(boolean condition) {
         assertFalse(condition);
+    }
+
+    public static void _assertFalse(String msg, boolean condition) {
+        assertFalse(condition, msg);
     }
 }
