@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CardDeck",
+            "request": "launch",
+            "mainClass": "objectstructures.CardDeck",
+            "projectName": "ovinger"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Application",
             "request": "launch",
             "mainClass": "tdt4100.app.Application"
