@@ -2,6 +2,19 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Digit",
+            "request": "launch",
+            "mainClass": "stateandbehavior.Digit",
+            "projectName": "ovinger"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Account",
+            "request": "launch",
+            "mainClass": "stateandbehavior.Account"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CardDeck",
             "request": "launch",
             "mainClass": "objectstructures.CardDeck",
