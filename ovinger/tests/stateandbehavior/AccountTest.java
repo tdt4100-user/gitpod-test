@@ -1,101 +1,187 @@
 package stateandbehavior;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
 
+import static assertions.Assertions.*;
 
-@DisplayName("A special test case")
-public class AccountTest{
+import stateandbehavior.Account;
 
-    private final double epsilon = 0.000001d;
-    private Account account;
-
-    @BeforeEach
-    public void setup(){
-        this.account = new Account(100, 5);
+public class AccountTest {
+  private Account account;
+  
+  @BeforeEach
+  protected void setUp() {
+    account = new Account();
+    
+  }
+  
+  private boolean operator_equals(final double d1, final double d2) {
+    boolean _xblockexpression = false;
+    {
+      final double epsilon = 0.000001d;
+      _xblockexpression = (((d1 - epsilon) < d2) && ((d1 + epsilon) > d2));
     }
-
-    @Test
-    public void testingThatBalanceAndInterestRateAreSetCorrectly(){
-        double expectedBalance = 100.0;
-        double expectedInterestRate = 5;
-        assertEquals(expectedBalance, this.account.getBalance(), epsilon, "Balance should be" + expectedBalance);
-        assertEquals(expectedInterestRate, this.account.getInterestRate(), epsilon, "InterestRate should be" + expectedInterestRate);
+    return _xblockexpression;
+  }
+  
+  @Test
+  public void testConstructor() {
+    _test__constructor_transitions0_effects0_state(account);
+    
+  }
+  
+  @Test
+  public void testDeposit() {
+    _transition_exprAction__deposit_transitions0_actions0(account);
+    _test__deposit_transitions0_effects0_state(account);
+    
+  }
+  
+  @Test
+  public void testDepositNegative() {
+    _transition_exprAction__depositNegative_transitions0_actions0(account);
+    _test__depositNegative_transitions0_effects0_state(account);
+    
+  }
+  
+  @Test
+  public void testAddInterest() {
+    _transition_exprAction__addInterest_transitions0_actions0(account);
+    _test__addInterest_transitions0_effects0_state(account);
+    _transition_exprAction__addInterest_transitions1_actions0(account);
+    _test__addInterest_transitions1_effects0_state(account);
+    _transition_exprAction__addInterest_transitions2_actions0(account);
+    _test__addInterest_transitions2_effects0_state(account);
+    
+  }
+  
+  private void _test__constructor_transitions0_effects0_state(final Account it) {
+    _test__constructor_transitions0_effects0_state_objectTests0_test(account);
+    
+  }
+  
+  private void _test__constructor_transitions0_effects0_state_objectTests0_test(final Account it) {
+    
+    double _balance = it.getBalance();
+    _assertTrue("balance == 0 failed", this.operator_equals(_balance, 0));
+    
+  }
+  
+  private void _transition_exprAction__deposit_transitions0_actions0(final Account it) {
+    try {
+      
+      it.deposit(100);
+      } catch (AssertionFailedError error) {
+      fail("deposit(100) failed: " + error.getMessage());
     }
-
-
-    @Test
-    public void account(){
-        try {
-			this.account = new Account(-1, 5);
-			fail("Creating Account with negative balance should throw an IllegalArgumentException.");
-		} catch (final Exception e) {
-			assertEquals(100.0d, this.account.getBalance(), epsilon);
-			assertEquals(5.0d, this.account.getInterestRate(), epsilon);
-			assertTrue(e instanceof IllegalArgumentException, "Exception should be IllegalArgumentException.");
-		}
-
-		try {
-			account = new Account(100, -1);
-			fail("Creating Account with negative interestRate should throw an IllegalArgumentException.");
-		} catch (final Exception e) {
-			assertEquals(100.0d, this.account.getBalance(), epsilon);
-			assertEquals(5.0d, this.account.getInterestRate(), epsilon);
-			assertTrue(e instanceof IllegalArgumentException, "Exception should be IllegalArgumentException.");
-		}
+    
+  }
+  
+  private void _test__deposit_transitions0_effects0_state(final Account it) {
+    _test__deposit_transitions0_effects0_state_objectTests0_test(account);
+    
+  }
+  
+  private void _test__deposit_transitions0_effects0_state_objectTests0_test(final Account it) {
+    
+    double _balance = it.getBalance();
+    _assertTrue("balance == 100 failed after deposit(100)", this.operator_equals(_balance, 100));
+    
+  }
+  
+  private void _transition_exprAction__depositNegative_transitions0_actions0(final Account it) {
+    try {
+      
+      it.deposit((-50));
+      } catch (AssertionFailedError error) {
+      fail("deposit(-50) failed: " + error.getMessage());
     }
-    @Test
-    public void testSetInterestRate() {
-		this.account.setInterestRate(7);
-		assertEquals(7.0d, this.account.getInterestRate(), epsilon);
-		try {
-			this.account.setInterestRate(-2);
-			fail("Setting a negative interestRate should result throw exception.");
-		} catch (final Exception e) {
-			assertEquals(7.0d, this.account.getInterestRate(), epsilon);
-		}
-	}
-
-    @Test
-	public void testDeposit() {
-		this.account.deposit(100);
-		assertEquals(200.0d, this.account.getBalance(), epsilon);
-	}
-    @Test
-	public void testDepositNegativeAmount() {
-		try {
-			this.account.deposit(-50);
-			fail("deposit should throw an IllegalArgumentException when given negative amounts.");
-		} catch (final Exception e) {
-			assertEquals(100.0d, this.account.getBalance(), epsilon, "deposit should ignore negative amounts." );
-			assertTrue(e instanceof IllegalArgumentException,"Exception should be IllegalArgumentException." );
-		}
-	}
-
-    @Test
-	public void testWithdraw() {
-		try {
-			this.account.withdraw(50);
-			assertEquals(50.0d, this.account.getBalance(), epsilon);
-		} catch (final Exception e){
-			fail();
-		}
-	}
-
-    @Test
-	public void testWithdrawTooLargeAmount() {
-		try {
-			this.account.withdraw(150);
-			fail("Expected IllegalArgumentException here");
-		} catch (final Exception e){
-			assertEquals(100.0d, this.account.getBalance(), epsilon);
-			assertTrue(e instanceof IllegalArgumentException);
-		}
-
+    
+  }
+  
+  private void _test__depositNegative_transitions0_effects0_state(final Account it) {
+    _test__depositNegative_transitions0_effects0_state_objectTests0_test(account);
+    
+  }
+  
+  private void _test__depositNegative_transitions0_effects0_state_objectTests0_test(final Account it) {
+    
+    double _balance = it.getBalance();
+    _assertTrue("balance == 0 failed after deposit(-50)", this.operator_equals(_balance, 0));
+    
+  }
+  
+  private void _transition_exprAction__addInterest_transitions0_actions0(final Account it) {
+    try {
+      
+      it.setInterestRate(5);
+      } catch (AssertionFailedError error) {
+      fail("interestRate = 5 failed: " + error.getMessage());
     }
+    
+  }
+  
+  private void _test__addInterest_transitions0_effects0_state(final Account it) {
+    _test__addInterest_transitions0_effects0_state_objectTests0_test(account);
+    
+  }
+  
+  private void _test__addInterest_transitions0_effects0_state_objectTests0_test(final Account it) {
+    
+    double _balance = it.getBalance();
+    boolean _equals = this.operator_equals(_balance, 0);
+    _assertTrue("balance == 0 failed after interestRate = 5", _equals);
+    
+    double _interestRate = it.getInterestRate();
+    _assertTrue("interestRate == 5 failed after interestRate = 5", this.operator_equals(_interestRate, 5));
+    
+  }
+  
+  private void _transition_exprAction__addInterest_transitions1_actions0(final Account it) {
+    try {
+      
+      it.deposit(100);
+      } catch (AssertionFailedError error) {
+      fail("deposit(100) failed: " + error.getMessage());
+    }
+    
+  }
+  
+  private void _test__addInterest_transitions1_effects0_state(final Account it) {
+    _test__addInterest_transitions1_effects0_state_objectTests0_test(account);
+    
+  }
+  
+  private void _test__addInterest_transitions1_effects0_state_objectTests0_test(final Account it) {
+    
+    double _balance = it.getBalance();
+    _assertTrue("balance == 100 failed after deposit(100)", this.operator_equals(_balance, 100));
+    
+  }
+  
+  private void _transition_exprAction__addInterest_transitions2_actions0(final Account it) {
+    try {
+      
+      it.addInterest();
+      } catch (AssertionFailedError error) {
+      fail("addInterest failed: " + error.getMessage());
+    }
+    
+  }
+  
+  private void _test__addInterest_transitions2_effects0_state(final Account it) {
+    _test__addInterest_transitions2_effects0_state_objectTests0_test(account);
+    
+  }
+  
+  private void _test__addInterest_transitions2_effects0_state_objectTests0_test(final Account it) {
+    
+    double _balance = it.getBalance();
+    _assertTrue("balance == 105 failed after addInterest", this.operator_equals(_balance, 105));
+    
+  }
 }
