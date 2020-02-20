@@ -37,39 +37,5 @@ shufflePerfectly() - stokker kortstokken ved å dele den i to like store deler o
 */
 public class Card {
 
-    private char suite;
-    private int face;
-
-    private List<Character> legalSuites = Arrays.asList('S', 'H', 'D','C');
-    private List<Integer> legalFaces = Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13);
-
-    public Card(char suite, int face){
-        this.setCard(suite, face);
-    }
-
-    private void setCard(char suite, int face){
-        if(!legalSuites.contains(suite)){
-            throw new IllegalArgumentException();
-        }
-
-        if(!legalFaces.contains(face)){
-            throw new IllegalArgumentException();
-        }
-
-        this.suite = suite;
-        this.face = face;
-    }
-
-    public char getSuit(){
-        return this.suite;
-    }
-
-    public int getFace(){
-        return this.face;
-    }
-
-    public String toString(){
-        return ""+ getSuit() + getFace() + "";
-    }
 
 }
