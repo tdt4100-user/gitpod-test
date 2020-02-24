@@ -10,6 +10,11 @@
             "group": "build"
         },
         {
+            "label": "Gå til øving 1",
+            "type": "shell",
+            "command": "git fetch && git checkout oving1"
+        },
+        {
             "label": "test Account",
             "type": "shell",
             "command": "cd ovinger && mvn -Dtest=AccountTest test",
