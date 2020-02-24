@@ -1,5 +1,6 @@
 tasks:
-  - init: sdk use 11.0.2-open
+  - before: brew install hub
+    init: git init && git add . && git commit -m "Inital tdt4100" && hub create && git push -u origin HEAD 
     command: cd ovinger && mvn clean -Dmaven.test.skip=true package
 image:
   file: .gitpod.Dockerfile
