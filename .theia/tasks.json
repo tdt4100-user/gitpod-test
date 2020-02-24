@@ -10,6 +10,21 @@
             "group": "build"
         },
         {
+            "label": "Gå til øving 1",
+            "type": "shell",
+            "command": "git stash && git fetch && git checkout oving1 && git stash pop"
+        },
+        {
+            "label": "Gå til øving 2",
+            "type": "shell",
+            "command": "git stash && git fetch && git checkout oving2 && git stash pop"
+        },
+        {
+            "label": "Gå til alle øvinger",
+            "type": "shell",
+            "command": "git stash && git fetch && git checkout monorepo && git stash pop",
+        },
+        {
             "label": "test Account",
             "type": "shell",
             "command": "cd ovinger && mvn -Dtest=AccountTest test",
@@ -29,7 +44,7 @@
             "group": "test",
             "problemMatcher": []
         },
-         {
+        {
             "label": "Run Location",
             "type": "shell",
             "command": "cd ovinger && mvn exec:java -Dexec.mainClass='stateandbehavior.Location'",
@@ -48,7 +63,7 @@
             "command": "cd ovinger && mvn exec:java -Dexec.mainClass='stateandbehavior.Digit'",
             "problemMatcher": []
         },
-         {
+        {
             "label": "test UpOrDownCounter",
             "type": "shell",
             "command": "cd ovinger && mvn -Dtest=UpOrDownCounterTest test",
@@ -87,7 +102,7 @@
             "command": "cd ovinger && mvn exec:java -Dexec.mainClass='stateandbehavior.LineEditor'",
             "problemMatcher": []
         },
-         {
+        {
             "label": "test StopWatch",
             "type": "shell",
             "command": "cd ovinger && mvn -Dtest=StopWatchTest test",
@@ -106,6 +121,6 @@
             "command": "cd tdt4100-assignment-with-javafx && mvn -PAccountApp exec:java",
             "group": "test",
             "problemMatcher": []
-        },
+        }
     ]
 }
