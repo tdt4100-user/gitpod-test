@@ -10,6 +10,16 @@
             "group": "build"
         },
         {
+            "label": "Gå til øving 1",
+            "type": "shell",
+            "command": "git stash && git fetch && git checkout oving1 && git stash pop"
+        },
+        {
+            "label": "Gå til alle øvinger",
+            "type": "shell",
+            "command": "git stash && git fetch && git checkout monorepo && git stash pop"
+        },
+        {
             "label": "test Account",
             "type": "shell",
             "command": "cd ovinger && mvn -Dtest=AccountTest test",
