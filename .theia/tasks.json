@@ -15,6 +15,11 @@
             "command": "git fetch && git checkout oving1"
         },
         {
+            "label": "Gå til alle øvinger",
+            "type": "shell",
+            "command": "git fetch && git checkout monorepo"
+        },
+        {
             "label": "test Account",
             "type": "shell",
             "command": "cd ovinger && mvn -Dtest=AccountTest test",
