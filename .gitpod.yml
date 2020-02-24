@@ -1,6 +1,6 @@
 tasks:
   - before: brew install hub
-    init: git init && git add . && git commit -m "Inital tdt4100" && hub create && git push -u origin HEAD 
+    init: hub fork
     command: cd ovinger && mvn clean -Dmaven.test.skip=true package
 image:
   file: .gitpod.Dockerfile
